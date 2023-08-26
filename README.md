@@ -14,7 +14,7 @@ Labook is a social network aimed at promoting connection and interaction among p
 - Authentication and Authorization
 - Routing
 
-  # Endpoints
+  ## Endpoints
     - [ ]  signup
     - [ ]  login
     - [ ]  create post
@@ -22,6 +22,10 @@ Labook is a social network aimed at promoting connection and interaction among p
     - [ ]  edit post
     - [ ]  delete post
     - [ ]  like / dislike post
+
+## Link to postman documentation
+- https://documenter.getpostman.com/view/26594016/2s9Y5YRhaj
+
 
 ### Users
 
