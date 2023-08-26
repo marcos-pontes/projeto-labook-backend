@@ -26,6 +26,7 @@ Labook is a social network aimed at promoting connection and interaction among p
 ## Link to postman documentation
 - https://documenter.getpostman.com/view/26594016/2s9Y5YRhaj
 
+# Example Request
 
 ### Users
 
@@ -41,7 +42,7 @@ Labook is a social network aimed at promoting connection and interaction among p
   - Status: 200 OK
   - Body: Registration success message and authentication token.
  
-    # Example Request
+    ### Example Request
 ```typescript
 // request POST /users/signup
 // body JSON
@@ -72,7 +73,7 @@ I0MH0.6wNFnHR4kZff2KhKT7TxeX4qLutnLwe5YDO-5EAn2rU"
   - Status: 200 OK
   - Body: Login success message and authentication token.
  
-    # Example Request
+    ### Example Request
 ```typescript
 // request POST /users/login
 // body JSON
@@ -104,7 +105,7 @@ I0MH0.6wNFnHR4kZff2KhKT7TxeX4qLutnLwe5YDO-5EAn2rU"
 - **Response**:
   - Status: 200 OK
  
-    # Example Request
+    ### Example Request
 ```typescript
 // request POST /posts
 // headers.authorization = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQyODc1OGIw
@@ -130,7 +131,7 @@ I0MH0.6wNFnHR4kZff2KhKT7TxeX4qLutnLwe5YDO-5EAn2rU"
 - **Response**:
   - Status: 200 OK
  
-    # Example Request
+    ### Example Request
 ```typescript
 // request GET /posts
 // headers.authorization = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQyODc1OGIw
@@ -180,7 +181,7 @@ I0MH0.6wNFnHR4kZff2KhKT7TxeX4qLutnLwe5YDO-5EAn2rU"
 - **Response**:
   - Status: 200 OK
  
-    # Example Request
+    ### Example Request
 ```typescript
 // request PUT /posts/:id
 // headers.authorization = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQyODc1OGIw
@@ -206,7 +207,7 @@ I0MH0.6wNFnHR4kZff2KhKT7TxeX4qLutnLwe5YDO-5EAn2rU"
 - **Response**:
   - Status: 200 OK
  
-    # Example Request
+    ### Example Request
 ```typescript
 // request DELETE /posts/:id
 // headers.authorization = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQyODc1OGIw
@@ -229,7 +230,7 @@ I0MH0.6wNFnHR4kZff2KhKT7TxeX4qLutnLwe5YDO-5EAn2rU"
 - **Response**:
   - Status: 200 OK
  
-    # Example Request
+    ### Example Request
 ### Like (funcionalidade 1)
 ```typescript
 // request PUT /posts/:id/like
