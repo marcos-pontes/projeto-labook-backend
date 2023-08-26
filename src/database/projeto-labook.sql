@@ -1,4 +1,4 @@
--- Active: 1687390462412@@127.0.0.1@3306
+-- Active: 1691185126193@@127.0.0.1@3306
 CREATE TABLE IF NOT EXISTS users (
     id TEXT PRIMARY KEY UNIQUE NOT NULL,
     name TEXT NOT NULL,
@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS posts (
     creator_id TEXT NOT NULL,
     content TEXT NOT NULL,
     likes INTEGER,
-    deslike INTEGER,
+    dislikes INTEGER,
     created_at TEXT NOT NULL,
     updated_at TEXT,
     FOREIGN KEY (creator_id) REFERENCES users (id)
@@ -21,9 +21,9 @@ CREATE TABLE IF NOT EXISTS posts (
     on UPDATE CASCADE
 );
 
-CREATE TABLE if NOT EXISTS likes_deslikes(
-    user_id TEXT NOT NULL,
-    post_id TEXT NOT NULL,
+CREATE TABLE if NOT EXISTS likes_dislikes(
+    user_id TEXT,
+    post_id TEXT,
     like INTEGER,
     FOREIGN KEY (user_id) REFERENCES users (id) 
     ON DELETE CASCADE
