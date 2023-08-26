@@ -90,14 +90,14 @@ export class PostsBusiness {
 
     const getPostCreatorId = getPosts.map((post) => post.creatorId);
 
-    const UserName: any = [];
+    const userName: any = [];
 
     for (let i = 0; i < getPostCreatorId.length; i++) {
       const result = await this.userDatabase.returnUserName(
         getPostCreatorId[i]
       );
 
-      UserName.push(result);
+      userName.push(result);
     }
 
     const post = getPosts.map((post, index) => {
@@ -110,7 +110,7 @@ export class PostsBusiness {
         updatedAt: post.updatedAt,
         creator: {
           id: post.creatorId,
-          name: UserName[index],
+          name: userName[index],
         },
       };
       return postModel;
