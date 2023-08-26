@@ -1,10 +1,29 @@
-import { UserDB } from "../types";
-
 export enum USER_ROLES {
   NORMAL = "NORMAL",
   ADMIN = "ADMIN"
 }
 
+export interface UserDB {
+    id: string,
+    name: string,
+    email: string,
+    password: string,
+    role: USER_ROLES,
+    created_at: string
+}
+
+export interface UserMDL {
+    id: string;
+    name: string;
+    email: string;
+    role: USER_ROLES;
+    createdAt: string;
+  }
+
+export interface GetPostsFromUser{
+  id:string,
+  name:string
+}
 
 export class User {
   constructor(
