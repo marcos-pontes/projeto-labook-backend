@@ -120,32 +120,6 @@ I0MH0.6wNFnHR4kZff2KhKT7TxeX4qLutnLwe5YDO-5EAn2rU"
 // response
 // status 201 CREATED
 ```
-  
-#### Create Comment
-
-- **Method**: POST
-- **Endpoint**: `/posts/comment`
-- **Request Body**:
-  - `content` (string): The content of the post.
-  - `token` (string): User's authentication token.
-- **Response**:
-  - Status: 200 OK
- 
-    ### Example Request
-```typescript
-// request POST /posts
-// headers.authorization = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQyODc1OGIw
-LTNmMTktNGE0ZS1iMzIyLTIxZjhmMDRlMTAxMSIsIm5hbWUiOiJBc3Ryb2RldiBTaWx
-2YSIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2OTMwNjk0NDAsImV4cCI6MTY5MzY3ND
-I0MH0.6wNFnHR4kZff2KhKT7TxeX4qLutnLwe5YDO-5EAn2rU"
-// body JSON
-{
-    "content": "Gone happy hour!"
-}
-
-// response
-// status 201 CREATED
-```
 
 
 #### Get Posts
@@ -194,54 +168,6 @@ I0MH0.6wNFnHR4kZff2KhKT7TxeX4qLutnLwe5YDO-5EAn2rU"
     }
 ]
 ```
-  #### Get Comments
-
-- **Method**: GET
-- **Endpoint**: `/posts/comments`
-- **Request Headers**:
-  - `token` (string): User's authentication token.
-- **Response**:
-  - Status: 200 OK
- 
-    ### Example Request
-```typescript
-// request GET /posts
-// headers.authorization = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQyODc1OGIw
-LTNmMTktNGE0ZS1iMzIyLTIxZjhmMDRlMTAxMSIsIm5hbWUiOiJBc3Ryb2RldiBTaWx
-2YSIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2OTMwNjk0NDAsImV4cCI6MTY5MzY3ND
-I0MH0.6wNFnHR4kZff2KhKT7TxeX4qLutnLwe5YDO-5EAn2rU"
-
-// response
-// status 200 OK
-[
-    {
-        "id": "uuidv4",
-        "content": "Studying OOP today!",
-        "likes": 2,
-        "dislikes" 1,
-        "createdAt": "2023-01-20T12:11:47:000Z"
-        "updatedAt": "2023-01-20T12:11:47:000Z"
-        "creator": {
-            "id": "uuidv4",
-            "name": "Fulano"
-        }
-    },
-    {
-        "id": "uuidv4",
-        "content": "kkkkkkkkkrying",
-        "likes": 0,
-        "dislikes" 0,
-        "createdAt": "2023-01-20T15:41:12:000Z"
-        "updatedAt": "2023-01-20T15:49:55:000Z"
-        "creator": {
-            "id": "uuidv4",
-            "name": "Ciclana"
-        }
-    }
-]
-```
-  
-
 
 #### Edit Post
 
